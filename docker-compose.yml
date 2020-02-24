@@ -1,0 +1,14 @@
+version: '3'
+services:
+  maze-app:
+    build: ./maze-app
+    ports:
+    - "3000:3000"
+    image: maze-app:latest
+
+  maze-back:
+    build: ./maze-back
+    ports:
+    - "5000:5000"
+    image: maze-back:latest
+
